@@ -17,8 +17,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func pushMeButtonTapped(_ sender: Any) {
-        print(textOne.text!)
-        print(textTwo.text!)
+        theLabel.text = "The Answer is... \(Double(textOne.text!)! + Double(textTwo.text!)!)"
     }
     
     override func viewDidLoad() {
