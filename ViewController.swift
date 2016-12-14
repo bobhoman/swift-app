@@ -17,7 +17,13 @@ class ViewController: UIViewController {
     
     
     @IBAction func pushMeButtonTapped(_ sender: Any) {
-        theLabel.text = "The Answer is... \(Double(textOne.text!)! + Double(textTwo.text!)!)"
+        let addition = false
+        
+        if addition {
+            theLabel.text = "The Answer is... \(Double(textOne.text!)! + Double(textTwo.text!)!)"
+        } else {
+            theLabel.text = "The Answer is... \(Double(textOne.text!)! - Double(textTwo.text!)!)"
+        }
     }
     
     override func viewDidLoad() {
